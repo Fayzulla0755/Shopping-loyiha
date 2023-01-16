@@ -1,0 +1,18 @@
+.loading-body {
+    width: 150px;
+    height: 60px;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.loading {
+    width: 60px;
+    height: 60px;
+    background-image: url("../../image/Animatsiya/Spinner-0.5s-200px\ \(1\).svg");
+    background-size: 100%;
+}
+.loading-text {
+    width: 90px;
+    color: #c76e1af3;
+}

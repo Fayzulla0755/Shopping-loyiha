@@ -1,0 +1,56 @@
+.err-conteiner {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: whitesmoke;
+
+    color: #784d22;
+}
+
+.img-blok {
+    width: 25rem;
+    height: 35rem;
+}
+.text-block {
+    margin-top: 50px;
+    max-width: 25rem;
+    max-height: 25rem;
+}
+.err-title {
+    font-weight: 400;
+    font-family: "Forum", cursive;
+    font-size: 75px;
+}
+.err-tect {
+    font-family: "Jost", cursive;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.img-blok {
+    background-image: url("../../picture/404-image.png");
+    background-position: center;
+    background-size: cover;
+}
+
+.home-btn {
+    padding: 5px 25px;
+    border: 1px solid #784d22;
+    color: #784d22;
+    background-color: #e5cbb5;
+    font-family: "Jost", cursive;
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 5px;
+    margin-top: 40px;
+    text-decoration: none;
+}
+.home-btn:hover {
+    background-color: #784d22;
+    color: #e5cbb5;
+}
+@media only screen and (max-width: 836px) {
+    .err-conteiner{
+        flex-direction: column;
+    }
+}

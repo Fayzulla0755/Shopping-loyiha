@@ -1,0 +1,39 @@
+.user-container {
+    width: 100%;
+    min-height: calc(100vh - 60px);
+    padding: 100px;
+    background-color: #b4661840;
+}
+.usertable {
+    background-color: #d3d3d37a;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+}
+.table {
+    max-width: 30rem;
+}
+
+/* .update-modal-body{
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        bottom: 0px;
+        background-color: rgba(23, 10, 1, 0.526);
+        z-index: 99999;
+        display: none;
+        justify-content: center;
+        align-items: center;
+    
+} */
+@media only screen and (max-width: 836px) {
+    .usertable {
+        padding: 5px;
+    }
+    .user-container {
+        padding: 5px;
+        padding-top: 25px;
+    }
+   
+}
