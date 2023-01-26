@@ -18,7 +18,7 @@ function UserPage() {
                 setBuyProducts(data.productInfo);
                 setLoading(false);
             } catch (err) {
-                console.log(err);
+                toast.error(err.response.data.message);;
             }
         };
         fetching();
@@ -28,7 +28,7 @@ function UserPage() {
             const { data } = await axios.delete("/product-info-buy/" + id);
             toast.success(data.message);
         } catch (err) {
-            console.log(err);
+            toast.error(err.response.data.message);
         }
     };
     // const buyProductUpdate = (index) => {

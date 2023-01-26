@@ -1,7 +1,7 @@
 import axios from "../../utils/axios";
 import React, { useState } from "react";
 import "./RegisterModal.css";
-import { toast } from "react-toastify";
+import { toast  } from "react-toastify";
 
 function RegisterModal() {
     const rexisterClose = (e) => {
@@ -35,7 +35,7 @@ function RegisterModal() {
            
             
         } catch (err) {
-            console.log(err);
+            toast.error(err.response.data.message);
         }
     };
     return (
@@ -86,6 +86,7 @@ function RegisterModal() {
                     </button>
                 </form>
             </div>
+        
         </div>
     );
 }

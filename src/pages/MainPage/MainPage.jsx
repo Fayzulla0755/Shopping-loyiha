@@ -25,15 +25,18 @@ function MainPage() {
         e.preventDefault();
         try {
             const { data } = await axios.post("/auth/login", loginData);
-            
+
             window.localStorage.setItem("token", data.accessToken);
             setLoginDate({
                 email: "",
                 password: "",
             });
-            toast.success('Profilingzga kirdingiz');
+           
+                toast.success("Profilingzga kirdingiz");
+            
+
         } catch (error) {
-            console.log(error);
+            
         }
     };
 

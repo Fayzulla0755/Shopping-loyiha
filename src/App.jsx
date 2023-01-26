@@ -10,14 +10,14 @@ import ErrorPage from "./pages/ErrorPage/ErrorPage";
 
 function App() {
     return (
-        <Layout >
+        <Layout>
             <Routes>
                 <Route path="*" element={<ErrorPage />} />
                 <Route path="/" element={<MainPage />} />
                 <Route path="/products" element={<ProductPage />} />
                 <Route path="/user" element={<UserPage />} />
             </Routes>
-            <ToastContainer position="top-right" />
+            <ToastContainer position="top-right" style={{zIndex: "99999 !important" }} />
             <RegisterModal />
         </Layout>
     );

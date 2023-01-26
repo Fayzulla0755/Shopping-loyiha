@@ -18,7 +18,7 @@ function ProductPage() {
                 setProducts(data);
                 setLoading(false);
             } catch (err) {
-                console.log(err);
+                toast.error(err.response.data.message);
             }
         };
         fetching();
@@ -37,7 +37,7 @@ function ProductPage() {
             );
             toast.success("Maxsulo savatchaga qo'shildi");
         } catch (err) {
-            console.log(err);
+            toast.error(err.response.data.message);
         }
     };
 
