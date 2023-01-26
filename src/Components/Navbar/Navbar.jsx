@@ -147,16 +147,16 @@ export default function Navbar() {
             <div className="user-info">
                 <table className=" ctable table-hover   table-striped table-warning">
                     <tr>
-                        <strong scope="col">Id: </strong>
-                        <td scope="row">{userData._id}</td>
+                        <th >Id: </th>
+                        <th scope="row">{userData._id}</th>
                     </tr>
                     <tr>
-                        <strong scope="col">Name: </strong>
-                        <td scope="row">{userData.name}</td>
+                        <th >Name: </th>
+                        <th scope="row">{userData.name}</th>
                     </tr>
                     <tr>
-                        <strong scope="col">Email: </strong>
-                        <td scope="row">{userData.email}</td>
+                        <th >Email: </th>
+                        <th scope="row">{userData.email}</th>
                     </tr>
                 </table>
             </div>
